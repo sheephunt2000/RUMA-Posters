@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath}
+\usepackage{anyfontsize}
+\thispagestyle{empty}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{float}
+\usepackage[letterspace=150]{microtype}
+
+
+\begin{document}
+
+%Border
+
+\begin{tikzpicture}[overlay,remember picture]
+\draw [line width=3pt,rounded corners=0pt,]
+    ($ (current page.north west) + (1.25cm,-1.25cm) $)
+    rectangle
+    ($ (current page.south east) + (-1.25cm,1.25cm) $);       
+\end{tikzpicture}
+\begin{center}\includegraphics[scale=.45]{RUMAlogo.png}\\
+presents... \\
+\begin{spacing}{1}
+{\fontsize{30}{30}\selectfont  \textsc{We have Data and Computers, why do we need Math?}} \end{spacing}
+
+ 
+
+~~\\
+\begin{spacing}{1.5}
+{\fontsize{22}{22} \selectfont A Lecture by Professor Konstantin Mischaikow}  \end{spacing} 
+\large Dept. of Mathematics, Rutgers University \\~~\\
+
+\normalsize
+\textsc{Abstract:}
+
+\large
+With today's technology we can collect massive high dimensional sets of data from experiments and generate massive high dimensional sets of data numerically, but at the end of the day it is still a finite set of points.  Assume that we are trying to understand a continuous process that generated the data. For example a process that can be modeled by a differential equation. In this case we probably want to be able to extract a continuous function, which raises the question how can one go from finite data to continuum objects with some sense of certainty. 
+\vspace{2mm}
+
+To be a bit more concrete this talk will focus on how to go from finite data to the identification of a periodic orbit using algebraic topology.
+
+\vspace{2mm}
+
+Prerequisites for this talk:  Calculus and Linear Algebra
+
+\vspace{2mm} 
+\huge   \textsc{Wednesday\\March 2, 2022 \\Hill 705 at 7:30
+  pm}
+
+\vspace{2mm}
+\large
+\emph{*Pizza and refreshments will be served}
+
+  \Large  Join our email list! Email us at
+  math.ruma@gmail.com\\Join our discord!
+  https://discord.gg/vMvXqbS
+\end{center}
+
+
+
+\end{document}
