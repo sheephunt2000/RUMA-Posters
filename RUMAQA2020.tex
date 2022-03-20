@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath}
+\usepackage{anyfontsize}
+\thispagestyle{empty}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{float}
+\usepackage[letterspace=150]{microtype}
+
+\usepackage{hyperref}
+
+\begin{document}
+
+%Border
+
+\begin{tikzpicture}[overlay,remember picture]
+\draw [line width=3pt,rounded corners=0pt,]
+    ($ (current page.north west) + (1.25cm,-1.25cm) $)
+    rectangle
+    ($ (current page.south east) + (-1.25cm,1.25cm) $);       
+\end{tikzpicture}
+\begin{center}\includegraphics[scale=.45]{RUMAlogo.png}\\
+\large  presents... \\
+
+\vspace{2mm}
+\begin{spacing}{1}
+{\fontsize{40}{44}\selectfont  \textsc{
+Math Major Q\&A Session}} \end{spacing}
+ 
+
+ ~~\\
+% \begin{spacing}{1.5}
+%   {\fontsize{24}{24} \selectfont Q\&A Panel: M. Beals,  (Pure Math), Someone (Finance), Someone
+%     (Education)}  \end{spacing}
+% \large Rutgers University \\~~\\
+% ~~\\
+
+\normalsize
+\textsc{Abstract:}
+
+\LARGE 
+Q\&A session on Zoom for
+current, incoming, or prospective math 
+majors. Come with any questions you have about the math
+major, graduate school, math education and more. We will
+have Professor Beals, Professor Kerrigan, math graduate student
+Brooke Logan,
+and senior undergraduate Adam Jamil, who has experience in
+industry. Those
+interested in different major tracks are encouraged to come. Don't
+miss out on the first event of the semester!\\
+\vspace{2mm}
+\url{https://rutgers.zoom.us/j/91060929315}
+
+\vspace{5mm} 
+\Huge   \textsc{Friday \\September 18, 2020 \\ZoomU at 7:00 pm}
+\end{center}
+\begin{center}
+\Large  Join our email list! Email us at math.ruma@gmail.com. \\Our
+Discord: \url{https://discord.gg/vMvXqbS}.\\
+\end{center}
+
+
+
+\end{document}

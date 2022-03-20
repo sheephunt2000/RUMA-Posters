@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath}
+\usepackage{anyfontsize}
+\thispagestyle{empty}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{float}
+\usepackage[letterspace=150]{microtype}
+
+
+\begin{document}
+
+%Border
+
+\begin{tikzpicture}[overlay,remember picture]
+\draw [line width=3pt,rounded corners=0pt,]
+    ($ (current page.north west) + (1.25cm,-1.25cm) $)
+    rectangle
+    ($ (current page.south east) + (-1.25cm,1.25cm) $);       
+\end{tikzpicture}
+\begin{center}\includegraphics[scale=.45]{RUMAlogo.png}\\
+presents... \\
+\begin{spacing}{1}
+{\fontsize{40}{44}\selectfont  \textsc{
+When Euler met Morse (and maybe Floer)}} \end{spacing}
+ 
+
+~~\\
+\begin{spacing}{1.5}
+{\fontsize{24}{24} \selectfont A Lecture by Professor Mariano
+  Echeverria}  \end{spacing} 
+\large Dept. of Mathematics, Rutgers University \\~~\\
+
+\normalsize
+\textsc{Abstract:}
+
+\Large
+A very useful way to classify surfaces in 3d space
+is via their number of holes. There are many
+way to compute such a number, but I will focus
+on the Morse theory point of view, which involves studying
+the behavior of a ``height'' function defined on the surface,
+and a system of ODEs associated to it.
+
+Time permitting, I will mention how this perspective can
+be used to study more complicated spaces, which can even
+be infinite dimensional! 
+\\
+
+\vspace{10mm} 
+\Huge   \textsc{Tuesday\\November 12, 2019 \\Hill 423 at 7:00
+  pm}
+
+\vspace{2mm}
+\large
+\emph{*Pizza and refreshments will be served}
+\end{center}
+
+\begin{center}
+  \large  Join our email list! Email us at math.ruma@gmail.com, or
+go to bit.ly/RUMA2019.\\
+\end{center}
+
+
+
+\end{document}
+

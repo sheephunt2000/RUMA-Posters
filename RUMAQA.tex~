@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath}
+\usepackage{anyfontsize}
+\thispagestyle{empty}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{float}
+\usepackage[letterspace=150]{microtype}
+
+
+\begin{document}
+
+%Border
+
+\begin{tikzpicture}[overlay,remember picture]
+\draw [line width=3pt,rounded corners=0pt,]
+    ($ (current page.north west) + (1.25cm,-1.25cm) $)
+    rectangle
+    ($ (current page.south east) + (-1.25cm,1.25cm) $);       
+\end{tikzpicture}
+\begin{center}\includegraphics[scale=.35]{RUMAlogo.png}\\
+presents... \\
+\begin{spacing}{1}
+{\fontsize{40}{44}\selectfont  \textsc{
+Math Major Q\&A Session}} \end{spacing}
+ 
+
+~~\\
+\begin{spacing}{1.5}
+  {\fontsize{24}{24} \selectfont Q\&A Panel: M. Beals, Grad
+    Student (Pure Math), Someone (Finance), Someone
+    (Education)}  \end{spacing}
+\large Rutgers University \\~~\\
+~~\\
+
+\normalsize
+\textsc{Abstract:}
+
+\huge 
+Q\&A session for current, incoming, or prospective math
+majors. Come with any questions you have about becoming a math
+major, being a math major, and more. Those interested in different
+major tracks are encouraged to come. All are welcome!\\
+
+\vspace{10mm} 
+\Huge   \textsc{Tuesday\\September 10, 2019 \\Hill 705 at 7:00 pm} \\~\\
+\end{center}
+
+
+
+\end{document}

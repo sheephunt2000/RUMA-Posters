@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath}
+\usepackage{anyfontsize}
+\thispagestyle{empty}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{float}
+\usepackage[letterspace=150]{microtype}
+
+
+\begin{document}
+
+%Border
+
+\begin{tikzpicture}[overlay,remember picture]
+\draw [line width=3pt,rounded corners=0pt,]
+    ($ (current page.north west) + (1.25cm,-1.25cm) $)
+    rectangle
+    ($ (current page.south east) + (-1.25cm,1.25cm) $);       
+\end{tikzpicture}
+\begin{center}\includegraphics[scale=.40]{RUMAlogo.png}\\
+presents... \\
+\begin{spacing}{1}
+{\fontsize{40}{44}\selectfont  \textsc{
+Scissors and K-theory}} \end{spacing}
+ 
+
+~~\\
+\begin{spacing}{1.5}
+{\fontsize{24}{24} \selectfont A Lecture by Professor Charles
+  Weibel}  \end{spacing}
+\large Dept. of Mathematics, Rutgers University \\~~\\
+~~\\
+
+\normalsize
+\textsc{Abstract:}
+
+\Large
+If you draw any polygon on a sheet of paper, you can use scissors
+to cut it up and rearrange the pieces to get a new polygon. These
+two polygons are said to be ``scissors congruent.''  Concatenating
+them gives an addition of polygons up to scissors congruence. We
+can also subtract them if we use virtual polygons; this is the
+basic principle of K-theory.  (Two polygons with the same area are
+always scissors congruent!)
+
+Now consider the problem in 3-space, with polyhedra instead
+of polygons, and study congruence classes of polyhedra. (Ok, use a
+knife.) Now the problem is to find an invariant other than volume.
+\\
+
+\vspace{10mm} 
+\Huge   \textsc{Wednesday\\October 30, 2019 \\Hill 425 at 7:00
+  pm}
+
+\vspace{2mm}
+\large
+\emph{*Pizza and refreshments will be served}
+\end{center}
+
+\begin{center}
+  \large  Join our email list! Email us at math.ruma@gmail.com, or
+go to bit.ly/RUMA2019.\\
+\end{center}
+
+
+
+\end{document}
