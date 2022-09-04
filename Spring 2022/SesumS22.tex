@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath}
+\usepackage{anyfontsize}
+\thispagestyle{empty}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{float}
+\usepackage[letterspace=150]{microtype}
+
+\graphicspath{{../}} % looks in parent directory for image
+
+\begin{document}
+
+%Border
+
+\begin{tikzpicture}[overlay,remember picture]
+\draw [line width=3pt,rounded corners=0pt,]
+    ($ (current page.north west) + (1.25cm,-1.25cm) $)
+    rectangle
+    ($ (current page.south east) + (-1.25cm,1.25cm) $);       
+\end{tikzpicture}
+\begin{center}\includegraphics[scale=.45]{RUMAlogo.png}\\
+\large  presents... \\
+
+\begin{spacing}{1}
+{\fontsize{34}{34}\selectfont  \textsc{Ancient Solutions in Geometric Flows
+}} \end{spacing}
+
+\begin{spacing}{1.5}
+{\fontsize{23}{23} \selectfont A Lecture by Professor Natasa Sesum}  \end{spacing} 
+\large Dept. of Mathematics, Rutgers University \\~~\\
+% \begin{spacing}{1.5}
+%   {\fontsize{24}{24} \selectfont Q\&A Panel: M. Beals,  (Pure Math), Someone (Finance), Someone
+%     (Education)}  \end{spacing}
+% \large Rutgers University \\~~\\
+% ~~\\
+
+\vspace{10mm} 
+
+\Large
+\textsc{Abstract:}
+
+\LARGE 
+We will discuss the Ricci flow, importance of ancient solutions for the flow and classification results of ancient solutions in certain cases.
+
+\vspace{25mm} 
+\Huge   \textsc{Wednesday\\April 27, 2022
+\\Zoom at 5:30 pm}
+\end{center}
+\begin{center}
+\Large  For the Zoom link go to the upcoming event page at:\\
+https://ruma.rutgers.edu \\
+Join our 
+Discord! https://discord.gg/vMvXqbS
+\end{center}
+
+
+
+\end{document}
