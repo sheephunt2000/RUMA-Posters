@@ -10,6 +10,7 @@
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage[letterspace=150]{microtype}
+\usepackage{array}
 
 \graphicspath{{../}} % looks in parent directory for image
 
@@ -23,12 +24,12 @@
     rectangle
     ($ (current page.south east) + (-1.25cm,1.25cm) $);       
 \end{tikzpicture}
-\begin{center}\includegraphics[scale=.45]{RUMAlogo.png}\\
+\begin{center}\includegraphics[scale=.4]{RUMAlogo.png}\\
 \large  presents... \\
 
 \vspace{2mm}
 \begin{spacing}{1}
-{\fontsize{40}{44}\selectfont  \textsc{
+{\fontsize{35}{44}\selectfont  \textsc{
 Math Major Q\&A Session}} \end{spacing}
  
 
@@ -42,23 +43,27 @@ Math Major Q\&A Session}} \end{spacing}
 \normalsize
 \textsc{Abstract:}
 
-\LARGE 
+\Large 
 Q\&A session for current, incoming, or prospective math
 majors. Come with any questions you have about the math
 major, graduate school, teaching in mathematics, and more. We will
-have Professor Beals, a current Rutgers graduate student, and a representative from RUMA on the
+have Professor Beals, a current Rutgers graduate student, a former
+graduate student now in industry, and a representative from RUMA on the
 panel. Those interested in different major tracks are encouraged
 to come. Don't miss out on the first event of the semester!\\
 
-\vspace{10mm} 
-\Huge   \textsc{Friday\\September 16, 2022 \\Hill 705 at 7:00 pm}
-\end{center}
-\begin{center}
+\vspace{2.5mm} 
+\huge   \textsc{Friday\\September 16, 2022 \\Hill 705 at 7:00 pm} \\
+\vspace{2.5mm}
 \Large  Check out our website at \\
-\url{https://ruma.rutgers.edu}. \\Join our 
-discord! \url{https://discord.gg/vMvXqbS}
+\url{https://ruma.rutgers.edu}.
 \end{center}
-
-
+\vspace{0.1mm}
+\begin{center}
+	\begin{tabular}{m{10em} m{1mm} m{11em}}
+		\Large Join our Discord! & &
+		\includegraphics[scale=0.12]{discord.png}
+	\end{tabular}
+\end{center}
 
 \end{document}
