@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath}
+\usepackage{anyfontsize}
+\thispagestyle{empty}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[letterspace=150]{microtype}
+\usepackage{array}
+
+\graphicspath{{../}} % looks in parent directory for image
+
+\begin{document}
+
+%Border
+
+\begin{tikzpicture}[overlay,remember picture]
+\draw [line width=3pt,rounded corners=0pt,]
+    ($ (current page.north west) + (1.25cm,-1.25cm) $)
+    rectangle
+    ($ (current page.south east) + (-1.25cm,1.25cm) $);       
+\end{tikzpicture}
+\begin{center}\includegraphics[scale=.3]{RUMAlogo.png}\\
+\large  presents... \\
+
+\vspace{2mm}
+\begin{spacing}{2}
+{\fontsize{42}{28}\selectfont  \textsc{
+    Modular origami and the Platonic solids
+    }} \end{spacing}
+ 
+~~\\
+\begin{spacing}{1}
+{\fontsize{24}{24} \selectfont A lecture by Professor Paul Ellis}  \end{spacing} 
+\large Dept. of Mathematics, Rutgers University \\~~\\
+
+\normalsize
+\textsc{Abstract:}
+
+\Large 
+We will be working mostly with the Sonobe units.  By folding a bunch of these units and fitting them together, we can construct some interesting shapes, including all the platonic solids.  If time permits, we will also talk about why there are only five of these.  I will bring plenty of other interesting origami models to share, in case we have more time.
+
+
+\begin{spacing}{2}
+    {\fontsize{36}{28}\selectfont  \textsc{
+        Friday, October 21, 2022 \\Hill 703 at 6:00 pm
+    }} 
+\end{spacing}
+
+\Large  Check out our website at \\
+\url{https://ruma.rutgers.edu}.
+\end{center}
+\vspace{0.1mm}
+\begin{center}
+	\begin{tabular}{m{10em} m{1mm} m{11em}}
+		\Large Join our Discord! & &
+		\includegraphics[scale=0.07]{discord.png}
+	\end{tabular}
+\end{center}
+
+\end{document}
