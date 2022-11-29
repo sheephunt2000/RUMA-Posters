@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath}
+\usepackage{anyfontsize}
+\thispagestyle{empty}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[letterspace=150]{microtype}
+\usepackage{array}
+
+\urlstyle{rm}
+
+\graphicspath{{../}} % looks in parent directory for image
+
+\begin{document}
+
+%Border
+
+\begin{tikzpicture}[overlay,remember picture]
+\draw [line width=3pt,rounded corners=0pt,]
+    ($ (current page.north west) + (1.25cm,-1.25cm) $)
+    rectangle
+    ($ (current page.south east) + (-1.25cm,1.25cm) $);       
+\end{tikzpicture}
+\begin{center}\includegraphics[scale=.2]{RUMAlogo.png}\\
+\large  presents... \\
+
+\vspace{1mm}
+\begin{spacing}{2}
+{\fontsize{28}{18}\selectfont  \textsc{
+    Neural Network Approaches for High-Dimensional Optimal Control
+    }} \end{spacing}
+ 
+\begin{spacing}{1}
+{\fontsize{18}{18} \selectfont A lecture by Professor Lars Ruthotto}  \end{spacing} 
+\large Dept. of Mathematics \& Computer Science, Emory University \\~~\\
+
+\normalsize
+\textsc{Abstract:}
+
+\large
+This talk presents recent advances in neural network approaches for approximating the value function of high-dimensional control problems. A core challenge of the training process is that the value function estimate and the relevant parts of the state space (those likely to be visited by optimal policies) need to be discovered. We show how insights from optimal control theory and – in the stochastic case - the fundamental relation between semi-linear parabolic partial differential equations and forward-backward stochastic differential equations can be leveraged to achieve these goals. To focus the sampling on relevant states during neural network training, we use the Pontryagin maximum principle (PMP) to obtain the optimal controls for the current value function estimate. Our approaches can handle both stochastic and deterministic control problems. Our training loss consists of a weighted sum of the objective functional of the control problem and penalty terms that enforce the HJB equations along the sampled trajectories. Importantly, training is unsupervised in that it does not require solutions of the control problem. We will present several numerical experiments for deterministic and stochastic problems with state dimensions of about 100 and compare our methods to nonlinear optimization approaches and existing approaches.
+
+\begin{spacing}{1.5}
+    {\fontsize{24}{28}\selectfont  \textsc{
+        Monday, December 5, 2022 \\ Zoom} (\lowercase{\url{tinyurl.com/3zcwt7bs}}) \textsc{at 5:00 PM}
+    } 
+\end{spacing}
+
+\Large  Check out our website at 
+\url{https://ruma.rutgers.edu}.
+\end{center}
+
+\end{document}
