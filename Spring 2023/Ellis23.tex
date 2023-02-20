@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath}
+\usepackage{anyfontsize}
+\thispagestyle{empty}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[letterspace=150]{microtype}
+\usepackage{array}
+
+\urlstyle{rm}
+
+\graphicspath{{../}} % looks in parent directory for image
+
+\begin{document}
+
+%Border
+
+\begin{tikzpicture}[overlay,remember picture]
+\draw [line width=3pt,rounded corners=0pt,]
+    ($ (current page.north west) + (1.25cm,-1.25cm) $)
+    rectangle
+    ($ (current page.south east) + (-1.25cm,1.25cm) $);       
+\end{tikzpicture}
+\begin{center}\includegraphics[scale=.4]{RUMAlogo.png}\\
+\large  presents... \\
+
+\vspace{1mm}
+\begin{spacing}{2}
+{\fontsize{32}{18}\selectfont  \textsc{
+    The Four Numbers Game
+    }} \end{spacing}
+ 
+\begin{spacing}{1}
+{\fontsize{24}{18} \selectfont A lecture by Professor Paul Ellis}  \end{spacing} 
+\large Dept. of Mathematics, Rutgers University \\~~\\
+
+\normalsize
+
+\vspace{10mm}
+
+\textsc{Abstract:}
+
+
+
+\LARGE
+Write any four numbers at the corners of a square.  Next, write the difference of each pair at the midpoint of the corresponding side.  Connect these midpoints to make a smaller square inscribed in the original one.  Repeat the process.  What happens?  Always?  Can you prove it?
+
+\vspace{10mm}
+
+\begin{spacing}{1.5}
+    {\fontsize{24}{28}\selectfont  \textsc{
+        Friday, Match 9th, 2022 \\ Hill 705 at 7:30 PM}
+    } 
+\end{spacing}
+
+\Large  Check out our website at 
+\url{https://ruma.rutgers.edu}!
+\end{center}
+\vspace{0.1mm}
+\begin{center}
+	\begin{tabular}{m{15em} m{1mm} m{5em}}
+		\Large {\textbf{Join our Discord!}} & &
+		\includegraphics[scale=0.07]{discord.png}
+	\end{tabular}
+\end{center}
+
+
+\end{document}
