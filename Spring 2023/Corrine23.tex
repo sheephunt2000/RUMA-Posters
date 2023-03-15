@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath}
+\usepackage{anyfontsize}
+\thispagestyle{empty}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[letterspace=150]{microtype}
+\usepackage{array}
+
+\urlstyle{rm}
+
+\graphicspath{{../}} % looks in parent directory for image
+
+\begin{document}
+
+%Border
+
+\begin{tikzpicture}[overlay,remember picture]
+\draw [line width=3pt,rounded corners=0pt,]
+    ($ (current page.north west) + (1.25cm,-1.25cm) $)
+    rectangle
+    ($ (current page.south east) + (-1.25cm,1.25cm) $);       
+\end{tikzpicture}
+\begin{center}\includegraphics[scale=.3]{RUMAlogo.png}\\
+\large  presents... \\
+
+\vspace{1mm}
+\begin{spacing}{1.5}
+{\fontsize{28}{18}\selectfont  \textsc{
+    Intersections of Combinatorics and Statistical Physics 
+    }} \end{spacing}
+ 
+\begin{spacing}{1.1}
+{\fontsize{20}{18} \selectfont A lecture by Dr. Corrine Yap} 
+\end{spacing} 
+\large Dept. of Mathematics, Rutgers University
+
+\normalsize
+
+\vspace{5mm}
+
+\textsc{Abstract:}
+
+
+
+\Large
+This talk will introduce how statistical physics (also known as statistical mechanics) can provide a useful perspective on problems in combinatorics and computer science, and vice versa. In recent years, mathematicians have tackled questions about phase transitions in particle systems by analyzing graph structures, and produced counting and sampling algorithms by using physics-inspired polymer models. We'll start with an introduction to some combinatorially relevant models such as the Ising, Potts, and hardcore models and explore a variety of questions and tools that lie in the intersection of combinatorics and statistical physics.
+
+
+
+%\vspace{10mm}
+
+\begin{spacing}{1.5}
+    {\fontsize{24}{28}\selectfont  \textsc{
+        Thursday, March 9, 2023 \\ Hill 705 at 7:30 PM}
+    } 
+\end{spacing}
+
+\Large  Check out our website at 
+\url{https://ruma.rutgers.edu}!
+\end{center}
+\vspace{0.1mm}
+\begin{center}
+	\begin{tabular}{m{15em} m{1mm} m{5em}}
+		\Large {\textbf{Join our Discord!}} & &
+		\includegraphics[scale=0.07]{discord.png}
+	\end{tabular}
+\end{center}
+
+
+\end{document}
