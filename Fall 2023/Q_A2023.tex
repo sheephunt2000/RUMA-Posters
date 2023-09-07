@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath}
+\usepackage{anyfontsize}
+\thispagestyle{empty}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[letterspace=150]{microtype}
+\usepackage{array}
+
+\graphicspath{{../}} % looks in parent directory for image
+
+\begin{document}
+
+%Border
+
+\begin{tikzpicture}[overlay,remember picture]
+\draw [line width=3pt,rounded corners=0pt,]
+    ($ (current page.north west) + (1.25cm,-1.25cm) $)
+    rectangle
+    ($ (current page.south east) + (-1.25cm,1.25cm) $);       
+\end{tikzpicture}
+\begin{center}\includegraphics[scale=.4]{RUMAlogo.png}\\
+\large  presents... \\
+
+\vspace{2mm}
+\begin{spacing}{1}
+{\fontsize{35}{44}\selectfont  \textsc{
+Math Major Q\&A Session}} \end{spacing}
+ 
+
+ ~~\\
+% \begin{spacing}{1.5}
+%   {\fontsize{24}{24} \selectfont Q\&A Panel: M. Beals,  (Pure Math), Someone (Finance), Someone
+%     (Education)}  \end{spacing}
+% \large Rutgers University \\~~\\
+% ~~\\
+
+\normalsize
+\textsc{Abstract:}
+
+\Large 
+Q\&A session for current, incoming, or prospective math
+majors. Come with any questions you have about the math
+major, graduate school, teaching in mathematics, and more. We will
+have a professor, a current math graduate student, a graduated math major in tech, and a representative from RUMA on the
+panel. Those interested in different major tracks are encouraged
+to come. \\
+
+\vspace{2.5mm} 
+\huge   \textsc{Friday\\September 8, 2023 \\Hill 705 at 7:00 pm} \\
+\vspace{2.5mm}
+\Large  Check out our website at \\
+\url{https://ruma.rutgers.edu}.
+\end{center}
+\vspace{0.1mm}
+\begin{center}
+	\begin{tabular}{m{10em} m{1mm} m{11em}}
+		\Large Join our Discord! & &
+		\includegraphics[scale=0.12]{discord.png}
+	\end{tabular}
+\end{center}
+
+\end{document}
